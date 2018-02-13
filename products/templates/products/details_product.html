@@ -1,0 +1,13 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Product Details - {{ product.desc }}
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'products:list_products' %}">&lt; Back</a>
+<h1>Product Details</h1>
+    Description: <strong>{{ product.desc }}</strong><br>
+    Price: <strong>{{ product.price }}</strong><br>
+    Quantity: <strong>{{ product.quantity }}</strong>
+{% endblock %}

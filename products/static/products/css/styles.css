@@ -1,0 +1,16 @@
+body{
+background-color: beige;
+}
+
+.space-left{
+padding-left: 20px;
+}
+
+a{
+font-size: 22px;
+}
+
+strong{
+color: red;
+font-size: 20px;
+}

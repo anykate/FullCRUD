@@ -1,0 +1,14 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Product Delete - {{ product.desc }}
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h2>Are you sure you want to delete product: {{ product.desc }}?</h2>
+    <input type="submit" name="submit" value="Delete" />
+    <input type="submit" name="cancel" value="Cancel" />
+</form>
+{% endblock %}
